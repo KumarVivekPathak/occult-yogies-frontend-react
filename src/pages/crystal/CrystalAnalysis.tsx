@@ -79,7 +79,7 @@ const CrystalAnalysis: React.FC<CrystalAnalysisProps> = ({
   submitButtonText = "Submit",
   showResetButton = true,
   isLoading = false,
-  mode = 'create'
+
 }) => {
   const [dateOfBirth, setDateOfBirth] = useState<Date | null>(null);
   

@@ -1,10 +1,10 @@
-import React, { useEffect, useState } from "react";
+import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import toast, { Toaster } from "react-hot-toast";
+import { Toaster } from "react-hot-toast";
 import CustomReport from "../../components/CustomReport";
 
 const DivineHealingCodesReport = () => {
-  const navigate = useNavigate();
+
 
   const [tableData, setTableData] = useState([
     {

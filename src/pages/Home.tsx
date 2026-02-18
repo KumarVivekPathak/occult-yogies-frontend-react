@@ -1,10 +1,10 @@
 import React from "react";
 import NameAnalysis from "./nameFixing/NameAnalysis";
 import Cookies from "js-cookie";
-import { useNavigate } from "react-router-dom";
+
 
 const Home : React.FC = () => {
-  const navigate = useNavigate();
+
   const token = Cookies.get("authToken");
   console.log("Token : ", token);
 

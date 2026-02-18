@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
-import { zodResolver } from "@hookform/resolvers/zod";
+
 import {
   Form,
   FormControl,
@@ -44,7 +44,7 @@ const DivineHealingCodesAnalysis: React.FC<DivineHealingCodesAnalysisProps> = ({
   handleSubmit,
 }) => {
   const [birthDate, setBirthDate] = useState<Date | null>(null);
-  const [selectedTime, setSelectedTime] = useState<string>("");
+
   const [minorAreaData, setMinorAreaData] = useState([
     {
       id: 1,

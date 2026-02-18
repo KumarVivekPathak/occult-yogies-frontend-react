@@ -10,29 +10,29 @@ const CrystalIntermediate: React.FC = () => {
 
   // Example: Load existing data for update mode
   useEffect(() => {
-    const loadExistingData = async () => {
-      try {
-        // Replace with your actual API call
-        // const response = await fetch('/api/crystal-analysis/existing-data');
-        // const data = await response.json();
+    // const loadExistingData = async () => {
+    //   try {
+    //     // Replace with your actual API call
+    //     // const response = await fetch('/api/crystal-analysis/existing-data');
+    //     // const data = await response.json();
         
-        // Example initial data for demonstration
-        const existingData: any= {
-          firstName: "John",
-          lastName: "Doe",
-          email: "john.doe@example.com",
-          dateOfBirth: "15/05/1990",
-          gender: "Male",
-          mobileNumber: "1234567890",
-          majorArea: "1",
-          minorArea: "2"
-        };
+    //     // Example initial data for demonstration
+    //     const existingData: any= {
+    //       firstName: "John",
+    //       lastName: "Doe",
+    //       email: "john.doe@example.com",
+    //       dateOfBirth: "15/05/1990",
+    //       gender: "Male",
+    //       mobileNumber: "1234567890",
+    //       majorArea: "1",
+    //       minorArea: "2"
+    //     };
         
-        setInitialData(existingData);
-      } catch (error) {
-        console.error('Failed to load existing data:', error);
-      }
-    };
+    //     setInitialData(existingData);
+    //   } catch (error) {
+    //     console.error('Failed to load existing data:', error);
+    //   }
+    // };
 
     // Uncomment to load existing data
     // loadExistingData();
