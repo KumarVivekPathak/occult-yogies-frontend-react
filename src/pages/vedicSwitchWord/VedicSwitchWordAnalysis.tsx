@@ -58,7 +58,7 @@ const VedicSwitchWordAnalysis: React.FC<VedicSwitchWordAnalysisProps> = ({
     VedicSwitchWordCategoriesDTO[]
   >([]);
 
-  const [minorAreaData, setMinorAreaData] = useState([
+  const minorAreaData = [
     {
       id: 1,
       value: "Love life",
@@ -79,7 +79,7 @@ const VedicSwitchWordAnalysis: React.FC<VedicSwitchWordAnalysisProps> = ({
       id: 5,
       value: "Partner",
     },
-  ]);
+  ];
 
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),

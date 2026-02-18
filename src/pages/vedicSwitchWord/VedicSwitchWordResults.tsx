@@ -1,14 +1,12 @@
-import React, { useState } from "react";
-
 const VedicSwitchWordResults = () => {
-  const [switchWordData, setSwitchWordData] = useState({
+  const switchWordData = {
     category: "Relationship",
     switchWordPurpose: "To attract Love",
     colorOfPen: "Red",
     association: "Radha Krishan",
     switchWord: "राधा कृष्ण",
     numerOfChant: 108,
-  });
+  };
 
   return (
     <div className="flex flex-col bg-grey font-roboto w-full h-full px-2 sm:px-4 md:px-10 py-10 rounded-xl outline-12 outline-textYellow">

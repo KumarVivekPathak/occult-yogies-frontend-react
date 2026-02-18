@@ -1,7 +1,7 @@
 import axios from 'axios';
 import { BaseURL } from '../constants/BaseURL';
 import Cookies from 'js-cookie';
-import type { MobileAnalysisFormDTO, NameFixingDTO } from './types';
+import type { MobileAnalysisFormDTO, NameFixingDTO, VedicSwitchWordBodyDTO } from './types';
 
 
 axios.interceptors.response.use(
@@ -190,7 +190,6 @@ export const updateAdvanceMobileNumerologyReport = async (id: number, body: Mobi
 }
 //just to show will be implemented later
 export const updateMobileNumerologyReport = async (id: number, body: MobileAnalysisFormDTO) => {
-    const token = Cookies.get('authToken');
     console.log("Updating mobile numerology report with id:", id, "and body:", body);
     return body;
 }
@@ -235,7 +234,7 @@ export const getVedicSwitchWordCategories = async () => {
     }
 }
 
-export const createVedicSwitchWord = async (body) =>{
+export const createVedicSwitchWord = async (body: VedicSwitchWordBodyDTO) =>{
     const token = Cookies.get('authToken');
     try {
         const response = await axios.post(`${BaseURL}/switch-words`, body, {

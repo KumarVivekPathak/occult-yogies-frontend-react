@@ -1,5 +1,4 @@
-import React, { useEffect, useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useEffect, useState } from "react";
 import {
   deleteVedicSwitchWordRecord,
   getVedicSwitchWordReportData,
@@ -9,7 +8,6 @@ import toast, { Toaster } from "react-hot-toast";
 import CustomReport from "../../components/CustomReport";
 
 const VedicSwitchwordReport = () => {
-  const navigate = useNavigate();
 
   const [tableData, setTableData] = useState<VedicSwitchWordReportListDTO[]>([
     {

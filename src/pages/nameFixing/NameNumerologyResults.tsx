@@ -2,14 +2,6 @@ import { Button } from "@/components/ui/button";
 import React from "react";
 
 const NameNumerologyResults : React.FC = () => {
-  const numerologyAnalysisSummary = {
-    currentFirstNameSum: 2,
-    currentFullNameSum: 5,
-    interactionValues: [1, 3, 5, 6],
-    neutralNumbers: [4, 6, 7, 9],
-    luckyNumbers: [1, 2, 3, 5],
-    unluckyNumbers: [8],
-  };
 
   const originalNameDetails = {
     firstName: "Vivek",

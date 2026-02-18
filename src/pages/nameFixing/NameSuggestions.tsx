@@ -9,14 +9,6 @@ import {
 import { Input } from "@/components/ui/input";
 import { useForm } from "react-hook-form";
 import { Button } from "@/components/ui/button";
-import {
-  Table,
-  TableBody,
-  TableCell,
-  TableHead,
-  TableHeader,
-  TableRow,
-} from "@/components/ui/table";
 import CustomNameSuggestionsTable from "../../components/CustomNameSuggestionsTable";
 import { useNavigate } from "react-router-dom";
 import { useUser } from "../../context/userContext";
@@ -27,27 +19,33 @@ const NameSuggestions : React.FC<{ reportID: number }> = ({ reportID }) => {
   const { userData } = useUser();
   const navigate = useNavigate();
 
-  const [suggestions, setSuggestions] = useState([
+  const [suggestions, setSuggestions] = useState<NameSuggestionsDTO[]>([
     {
-      id: "1",
+      id: 1,
       firstName: "Vivek",
-      fullName: "Vivek Pathak",
+      name: "Vivek Pathak",
       firstNameSum: "20/2",
       fullNameSum: "41/5",
+      firstNamePrediction: "Good for career",
+      fullNamePrediction: "Success in life",
     },
     {
-      id: "2",
+      id: 2,
       firstName: "Sonal",
-      fullName: "Sonal Madan",
+      name: "Sonal Madan",
       firstNameSum: "30/3",
       fullNameSum: "25/7",
+      firstNamePrediction: "Creative energy",
+      fullNamePrediction: "Spiritual growth",
     },
     {
-      id: "3",
+      id: 3,
       firstName: "Sachin",
-      fullName: "Sachin Kumar",
+      name: "Sachin Kumar",
       firstNameSum: "32/5",
       fullNameSum: "17/8",
+      firstNamePrediction: "Leadership qualities",
+      fullNamePrediction: "Material success",
     },
   ]);
 
@@ -69,11 +67,11 @@ const NameSuggestions : React.FC<{ reportID: number }> = ({ reportID }) => {
     targetNumbers: [1, 2, 3, 5],
   });
 
-  const [faimilyDetails, setFaimilyDetails] = useState({
+  const faimilyDetails = {
     fatherName: "Vivek Pathak",
     motherName: "Vivek Pathak",
     spouseName: "Vivek Pathak",
-  });
+  };
 
   const form = useForm({
     defaultValues: {
@@ -99,8 +97,6 @@ const NameSuggestions : React.FC<{ reportID: number }> = ({ reportID }) => {
       const neutralNumbers = responseData.neutral_numbers;
       const firstNameSum = responseData.first_name_numerology;
       const fullNameSum = responseData.full_name_numerology;
-      const kingNumber = responseData.king_number;
-      const queenNumber = responseData.queen_number;
 
       const selectedNames = responseData.selected_names.map(
         (name: NameSuggestionsDTO, index: number) => {
