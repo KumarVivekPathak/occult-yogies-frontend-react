@@ -1,0 +1,58 @@
+/* Google Fonts import must be at the very top */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* Tailwind directives */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Other CSS imports */
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@layer base {
+  .times-new-roman {
+    font-family: 'Lora', 'Times New Roman', Times, serif;
+    font-weight: 500;
+  }
+  
+  body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+:root {
+  --font-roboto: 'Roboto', sans-serif;
+}
+
+.font-roboto {
+  font-family: 'Roboto', sans-serif !important;
+}
+
+.font-poppins {
+  font-family: 'Poppins', sans-serif !important;
+}
+
+
+@theme {
+  --color-primary: #00ff00; 
+  --color-magenta : #ff00ff;
+  --color-button : #d79f3e;
+  --color-button-hover : #ecb946;
+  --color-darkPurple : #450D24;
+  --color-purple : #771B42;
+  --color-lightPurple : #AF2B42;
+  --color-bgYellow : #F9E9C7;
+  --color-textYellow : #d79f3e;
+  --color-lightYellow : #EBB866;
+  --color-buttonHover : #ecb946;
+  --color-grey : #E7E7E7;
+  --color-buttonRedHover : #8B0000;
+  --color-buttonRed : #8A181A;
+
+ 
+
+}
+

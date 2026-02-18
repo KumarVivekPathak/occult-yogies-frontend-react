@@ -1,0 +1,109 @@
+@import "@fontsource/roboto/300.css";
+@import "@fontsource/roboto/400.css";
+@import "@fontsource/roboto/500.css";
+@import "@fontsource/roboto/700.css";
+@import "@fontsource/roboto/900.css";
+@import "@fontsource/roboto/300-italic.css";
+@import "@fontsource/roboto/400-italic.css";
+@import "@fontsource/roboto/500-italic.css";
+@import "@fontsource/roboto/700-italic.css";
+@import "@fontsource/roboto/900-italic.css";
+
+#root {
+  /* max-width: 1280px; */
+  text-align: center;
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}
+
+/* Logo and doc styles */
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+/* Google Translate Container */
+#google_translate_element {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  background: #f3f4f6;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+}
+
+@keyframes slowSpin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.slow-spin {
+  animation: slowSpin 30s ease-in-out infinite;
+}
+
+/* .animate-gradient-ltr {
+  background-image: linear-gradient(
+    to right,
+    #761a41,
+    #7f263c,
+    #9b4933,
+    #ca873e,
+    #d0923f,
+    #eab646,
+    #edba46,
+    #ca873e,
+    #9b4933,
+    #761a41
+  );
+  background-size: 300% 100%;
+  animation: gradient-ltr 20s linear infinite;
+} */
+
+/* #7a1f40
+#7f263c
+#761a41
+#832b39
+#933c33
+#974233
+#a65635
+#d59740
+#e3ad43
+#ecb946 */
