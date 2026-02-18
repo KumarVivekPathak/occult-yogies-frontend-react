@@ -1,3 +1,5 @@
+import React from "react";
+
 const VedicSwitchWordResults = () => {
   const switchWordData = {
     category: "Relationship",
